@@ -8,11 +8,16 @@
 <!-- model-viewer library -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 
+<!-- Google Fonts: DM Sans + Geist Pixel -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&family=Geist+Pixel&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --bg: #0e0e0f;
     --fg: #f2f2f0;
-    --accent: #6ee7b7;
+    --accent: #39ff14;
     --muted: #8a8a8f;
   }
 
@@ -24,7 +29,7 @@
     height: 100%;
     background: var(--bg);
     color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
   body {
@@ -38,7 +43,8 @@
   }
 
   h1 {
-    font-size: 1.1rem;
+    font-family: "Geist Pixel", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 0.01em;
     margin: 0 0 20px;
@@ -59,11 +65,12 @@
   #ar-button {
     margin-top: 24px;
     padding: 16px 32px;
+    font-family: "Geist Pixel", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: #0e0e0f;
-    background: var(--accent);
-    border: none;
+    color: var(--accent);
+    background: #000;
+    border: 2px solid var(--accent);
     border-radius: 999px;
     cursor: pointer;
     transition: transform 0.15s ease, opacity 0.15s ease;
@@ -76,7 +83,7 @@
 
   .hint {
     margin-top: 14px;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     color: var(--muted);
   }
 </style>
